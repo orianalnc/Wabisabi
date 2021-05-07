@@ -1,33 +1,33 @@
 $(function () {
-    "use strict";
-  
-    // Back to top button
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $('.back-to-top').fadeIn('slow');
-      } else {
-        $('.back-to-top').fadeOut('slow');
-      }
-    });
-  
-    $('.back-to-top').click(function () {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 1500, 'easeInOutExpo');
-      return false;
-    });
-  
-    $(".collapse.show").each(function () {
-      $(this).prev(".card-header").addClass("highlight");
-    });
-  
-    // Highlight open collapsed element 
-    $(".card-header .btn").click(function () {
-      $(".card-header").not($(this).parents()).removeClass("highlight");
-      $(this).parents(".card-header").toggleClass("highlight");
-    });
+  "use strict";
 
-    
+  // Back to top button
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
+
+  $('.back-to-top').click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
+  $(".collapse.show").each(function () {
+    $(this).prev(".card-header").addClass("highlight");
+  });
+
+  // Highlight open collapsed element 
+  $(".card-header .btn").click(function () {
+    $(".card-header").not($(this).parents()).removeClass("highlight");
+    $(this).parents(".card-header").toggleClass("highlight");
+  });
+
+
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 2;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function (e) {
@@ -148,73 +148,73 @@ $(function () {
   //Carousel productos
 
   $('#products-carousel').owlCarousel({
-    loop:true,
-    margin:50,
-    responsiveClass:true,
+    loop: true,
+    margin: 50,
+    responsiveClass: true,
     navText: [
       "<img src='assets/images/icono/left.png'  class='img-fluid '>",
       "<img src='assets/images/icono/right.png'  class='img-fluid '>"
     ],
     autoplay: true,
     autoplayHoverPause: true,
-    responsive:{
-        0:{
-            items:1,
-            nav:false,
-            stagePadding: 50,
-            margin: 30
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:false
-        }
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        stagePadding: 50,
+        margin: 30
+      },
+      600: {
+        items: 1,
+        nav: false
+      },
+      1000: {
+        items: 3,
+        nav: true,
+        loop: false
+      }
     }
-})
+  })
 
-$('#products-carousel-pro').owlCarousel({
-    loop:true,
-    margin:50,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:false,
-            stagePadding: 50,
-            margin: 30
-        },
-        600:{
-            items:1,
-            nav:true,
-            navText: [
-              "<img src='assets/images/icono/left.png'  class='img-fluid '>",
-              "<img src='assets/images/icono/right.png'  class='img-fluid '>"
-            ],
-        },
-        1000:{
-            items:4,
-            nav:false,
-            loop:false
-        }
+  $('#products-carousel-pro').owlCarousel({
+    loop: true,
+    margin: 50,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        stagePadding: 50,
+        margin: 30
+      },
+      600: {
+        items: 1,
+        nav: true,
+        navText: [
+          "<img src='assets/images/icono/left.png'  class='img-fluid '>",
+          "<img src='assets/images/icono/right.png'  class='img-fluid '>"
+        ],
+      },
+      1000: {
+        items: 4,
+        nav: false,
+        loop: false
+      }
     }
-})
+  })
 
-const activeImage = document.querySelector(".product-image .active");
-const productImages = document.querySelectorAll(".image-list img");
-const navItem = document.querySelector('a.toggle-nav');
+  const activeImage = document.querySelector(".product-image .active");
+  const productImages = document.querySelectorAll(".image-list img");
+  const navItem = document.querySelector('a.toggle-nav');
 
-function changeImage(e) {
-  activeImage.src = e.target.src;
-}
+  function changeImage(e) {
+    activeImage.src = e.target.src;
+  }
 
-function toggleNavigation(){
-  this.nextElementSibling.classList.toggle('active');
-}
+  function toggleNavigation() {
+    this.nextElementSibling.classList.toggle('active');
+  }
 
-productImages.forEach(image => image.addEventListener("click", changeImage));
-navItem.addEventListener('click', toggleNavigation);
+  productImages.forEach(image => image.addEventListener("click", changeImage));
+  navItem.addEventListener('click', toggleNavigation);
 });

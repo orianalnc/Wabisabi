@@ -32,7 +32,7 @@
   src: url('../fonts/Bodoni\ 72.ttc'),
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -90,13 +90,13 @@ p {
   z-index: 9;
 }
 
-.svg-user svg{
+.svg-user svg {
   width: 22px;
   height: auto;
   margin-right: 20px;
 }
 
-.svg-cart svg{
+.svg-cart svg {
   width: 34px;
   height: auto;
 }
@@ -550,7 +550,6 @@ a.get-started-btn:hover {
   line-height: 40px;
 }
 
-
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
@@ -585,6 +584,7 @@ a.get-started-btn:hover {
   font-weight: 500;
   font-size: 22px;
 }
+
 #about, .main #about {
   position: relative;
 }
@@ -645,6 +645,7 @@ section.about {
   margin-top: 30px;
   margin-bottom: 60px;
 }
+
 .about::before {
   content: url('../images/wabi-03.png');
   z-index: 2;
@@ -666,10 +667,6 @@ section.about {
   right: 0;
   z-index: 1;
 }
-
-
-
-
 
 .beneficios {
   background-color: var(--roseLight);
@@ -1170,19 +1167,19 @@ footer ul li a {
   font-weight: 600;
   margin: 0 15px;
 }
+
 .carousel-wrap {
   position: relative;
 }
 
-
 .owl-carousel .item {
   position: relative;
-  z-index: 100; 
-  -webkit-backface-visibility: hidden; 
+  z-index: 100;
 }
 
 /* end fix */
-.owl-nav > button {
+
+.owl-nav>button {
   margin-top: -26px;
   position: absolute;
   top: 50%;
@@ -1241,7 +1238,7 @@ footer ul li a {
   .beneficios .bene-1 h2 {
     margin: 15px 0;
   }
-   .main #about::before, .main #about::after, #mood::before, #mood::after, #bene::before, #bene::after, #products::after, #products::before {
+  .main #about::before, .main #about::after, #mood::before, #mood::after, #bene::before, #bene::after, #products::after, #products::before {
     content: " ";
   }
   .main section.about {
@@ -1254,7 +1251,7 @@ footer ul li a {
     transform: scale(.3);
     opacity: .8;
     left: -42px;
-}
+  }
   .mood {
     padding: 80px 15px;
   }
@@ -1419,94 +1416,80 @@ footer ul li a {
     left: -60px;
     transform: scale(.6);
   }
-
-
-.about h2 {
-  font-size: 50px;
-}
-
-.about p {
-  font-size: 16px;
-}
-
-section.about {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 20px;
-  padding-bottom: 120px;
-  margin: -60px 0 0 0;
-}
-
-.ml-sm-50 {
-  margin-left: 50px;
-}
-
-.pdt-sm-50 {
-  padding-top: 50px;
-}
-
-.pdb-sm-50 {
-  padding-top: 50px;
-}
-
-.mt-sm-100 {
-  margin-top: 100px;
-}
-
-.btn-link>ul>li {
-  margin: 0;
-}
-
-#header {
-  margin: 0;
-}
-.bene-3 p, #beneficios-2 p{
-  font-size: 14px;
-}
-#products {
-  padding: 60px 10px;
-}
-.main .about::before {
-  content: " ";
-  background-image: none;
-}
-
-.main #about::before {
-  content: " ";
-  position: absolute;
-  background-image: url('../images/home/shape-01.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  bottom: -2px;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
-#products {
-  background-color: #f8e5d7;
-}
-
-.main #hero h2 {
-  font-size: 30px;
-}
-
-.mobile-nav{
-  padding: 25px;
-}
-.mobile-nav-toggle {
-  position: fixed;
-  left: 10px;
-  top: 40px;
-  font-size: 30px;
-}
-.logo {
-  margin-left: 30px;
-}
-nav.btn-link {
-  padding: 20px 0;
-}
+  .about h2 {
+    font-size: 50px;
+  }
+  .about p {
+    font-size: 16px;
+  }
+  section.about {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 120px;
+    margin: -60px 0 0 0;
+  }
+  .ml-sm-50 {
+    margin-left: 50px;
+  }
+  .pdt-sm-50 {
+    padding-top: 50px;
+  }
+  .pdb-sm-50 {
+    padding-top: 50px;
+  }
+  .mt-sm-100 {
+    margin-top: 100px;
+  }
+  .btn-link>ul>li {
+    margin: 0;
+  }
+  #header {
+    margin: 0;
+  }
+  .bene-3 p, #beneficios-2 p {
+    font-size: 14px;
+  }
+  #products {
+    padding: 60px 10px;
+  }
+  .main .about::before {
+    content: " ";
+    background-image: none;
+  }
+  .main #about::before {
+    content: " ";
+    position: absolute;
+    background-image: url('../images/home/shape-01.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    bottom: -2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  #products {
+    background-color: #f8e5d7;
+  }
+  .main #hero h2 {
+    font-size: 30px;
+  }
+  .mobile-nav {
+    padding: 25px;
+  }
+  .mobile-nav-toggle {
+    position: fixed;
+    left: 10px;
+    top: 40px;
+    font-size: 30px;
+  }
+  .logo {
+    margin-left: 30px;
+  }
+  nav.btn-link {
+    padding: 20px 0;
+  }
 }
 
 @media only screen and (max-width:867px) {
@@ -1540,47 +1523,42 @@ nav.btn-link {
     top: -450px;
     left: -150px;
     transform: scale(.3);
-}
-
-#beneficios-2::after {
+  }
+  #beneficios-2::after {
     right: -170px;
     bottom: 300px;
     transform: scale(.3);
-}
-.img-bene-2 {
-  margin-left: -60px;
-}
-#beneficios-2::before {
-  bottom: -80px;
-  left: -90px;
-  transform: scale(.4);
-}
+  }
+  .img-bene-2 {
+    margin-left: -60px;
+  }
+  #beneficios-2::before {
+    bottom: -80px;
+    left: -90px;
+    transform: scale(.4);
+  }
 }
 
 @media only screen and (max-width:320px) {
-
-.bene-1 .img-bene-1 img{
-  margin-left: 0;
+  .bene-1 .img-bene-1 img {
+    margin-left: 0;
+  }
+  .bene-1 .img-bene-1::before {
+    top: -370px;
+    left: -59px;
+    transform: scale(.2);
+  }
+  #beneficios-2::after {
+    bottom: 500px;
+  }
 }
-.bene-1 .img-bene-1::before {
-  top: -370px;
-  left: -59px;
-  transform: scale(.2);
-}
-
-#beneficios-2::after {
-  bottom: 500px;
-}
-
-
-}
-
 
 .cls-1 {
   fill: #E3DFD9;
 }
+
 @media (max-width: 768px) {
-.cls-1 {
-  fill: #0a0a0a;
-}
+  .cls-1 {
+    fill: #0a0a0a;
+  }
 }
