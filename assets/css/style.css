@@ -90,6 +90,17 @@ p {
   z-index: 9;
 }
 
+.svg-user svg{
+  width: 22px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.svg-cart svg{
+  width: 34px;
+  height: auto;
+}
+
 /* Container */
 
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
@@ -1481,6 +1492,21 @@ section.about {
   font-size: 30px;
 }
 
+.mobile-nav{
+  padding: 25px;
+}
+.mobile-nav-toggle {
+  position: fixed;
+  left: 10px;
+  top: 40px;
+  font-size: 30px;
+}
+.logo {
+  margin-left: 30px;
+}
+nav.btn-link {
+  padding: 20px 0;
+}
 }
 
 @media only screen and (max-width:867px) {
@@ -1547,4 +1573,14 @@ section.about {
 }
 
 
+}
+
+
+.cls-1 {
+  fill: #E3DFD9;
+}
+@media (max-width: 768px) {
+.cls-1 {
+  fill: #0a0a0a;
+}
 }
