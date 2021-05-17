@@ -509,19 +509,23 @@ a.get-started-btn:hover {
 
 #hero {
   width: 100%;
-  height: 70vh;
-  background: url("../images/fondo-01.png") top center;
+  min-height: 100vh;
+  height: auto;
+  background: url("../images/fondo-01.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
   position: relative;
 }
 
 .main #hero {
   width: 100%;
-  height: 80vh;
-  background: url("../images/home03.png") top center;
+  min-height: 100vh;
+  height: auto;
+  background: url("../images/home03.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
   position: relative;
 }
 /*
@@ -535,10 +539,12 @@ a.get-started-btn:hover {
 */
 #product-details #hero {
   width: 100%;
-  height: 80vh;
-  background: url("../images/productos/fondo.jpg") top center;
+  min-height: 100vh;
+  height: auto;
+  background: url("../images/productos/fondo.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -771,6 +777,10 @@ section.about {
   text-align: center;
   font-family: Bodoni;
 }
+.cta-footer h2{
+  font-size: 45px;
+    font-weight: 600;
+}
 
 .main .cta-footer {
   width: 100%;
@@ -843,6 +853,7 @@ section.about {
   margin-bottom: 35px;
   font-family: Bodoni;
   font-size: 35px;
+  font-weight: 600;
 }
 
 .products .card .card-title span {
@@ -1351,7 +1362,11 @@ footer ul li a {
 
 
 }
-
+@media only screen and (max-width:1280px) {
+  nav.nav-menu-cart  li:first-child{
+    width: 50%;
+  }
+}
 @media only screen and (max-width:1024px) {
   #header {
     margin: 0 20px;
