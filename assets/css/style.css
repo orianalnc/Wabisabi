@@ -283,6 +283,11 @@ p {
     visibility: visible;
     width: 100%;
   } */
+  #header.header-scrolled .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
+    color: var(--black);
+    font-weight: 900;
+    text-decoration: none;
+  }
 
 .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
   color: var(--black);
