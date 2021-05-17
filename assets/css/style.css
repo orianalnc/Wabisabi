@@ -655,7 +655,8 @@ a.get-started-btn:hover {
 
 section.about {
   background-color: var(--rose-light);
-  padding: 120px 0;
+  padding-bottom: 180px;
+    padding-top: 20px;
 }
 
 .about h2 {
@@ -911,7 +912,8 @@ section.about {
   background-image: url('../images/home/shape-02.png');
   background-repeat: no-repeat;
   background-position: top;
-  top: 0;
+  background-size: contain;
+  top: -5px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -924,6 +926,7 @@ section.about {
   background-image: url('../images/home/shape-03.png');
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
   bottom: -25px;
   top: 0;
   left: 0;
@@ -1250,6 +1253,15 @@ footer ul li a {
 
 /* ---- Media ----*/
 
+@media only screen and (max-width:2560px) {
+  .main .cta-footer{
+    height: 850px;
+    background-position: center;
+  }
+}
+
+
+
 @media only screen and (max-width:1440px) {
   .products-detail::before {
     transform: scale(.8);
@@ -1513,10 +1525,7 @@ footer ul li a {
   .products .card .card-body {
     padding: 15px;
   }
-  .products {
-    position: relative;
-    padding: 60px 15px;
-  }
+  
   .mood-item h2 {
     font-size: 25px;
     margin-top: -20px;
@@ -1525,8 +1534,9 @@ footer ul li a {
     font-size: 25px;
   }
   #products-carousel .owl-stage {
-    right: 0px;
+    right: 50px;
   }
+  
   #products-carousel .btn.btn-outline-dark {
     width: 100%;
   }
@@ -1548,6 +1558,13 @@ footer ul li a {
     transform: rotate(125deg);
     margin: 0 -0px 30px -80px;
   }
+  #bene .flecha-bene-01 {
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+
   #bene .w-50.flecha-bene-02 {
     width: 30% !important;
   }
@@ -1656,7 +1673,11 @@ footer ul li a {
     font-size: 14px;
   }
   #products {
-    padding: 60px 10px;
+    padding: 0px 10px;
+  }
+  .products {
+    position: relative;
+    padding: 10px 15px;
   }
   .main .about::before {
     content: " ";
@@ -1741,6 +1762,9 @@ footer ul li a {
     bottom: -80px;
     left: -90px;
     transform: scale(.4);
+  }
+  .mood::after{
+    bottom: -5px;
   }
 }
 
