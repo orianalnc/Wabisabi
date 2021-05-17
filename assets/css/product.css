@@ -39,6 +39,8 @@
   width: 45%;
 }
 
+
+
 @media (min-width: 62rem) {
   .product-image img, .image-list img {
     width: 100%;
@@ -214,5 +216,14 @@
   }
   #products {
     padding: 60px 10px;
+  }
+  .product-image {
+    border: 1px solid #EBDACB;
+}
+}
+
+@media only screen and (max-width:425px) {
+  #bene .mt-sm-150 {
+    margin-top: -200px;
   }
 }
