@@ -355,6 +355,9 @@ p {
   position: absolute;
   right: 15px;
 }
+nav.nav-menu-cart  li:first-child{
+  width: 50%;
+}
 
 @media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
@@ -803,6 +806,7 @@ section.about {
   padding: 160px 60px;
 }
 
+
 /*.products::before{
   content: url('../images/home/shape-02.png');
   position: absolute;
@@ -1237,6 +1241,7 @@ footer ul li a {
 .owl-nav .owl-next {
   right: -80px;
 }
+
 
 /* ---- Media ----*/
 
