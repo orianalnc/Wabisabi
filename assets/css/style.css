@@ -1673,11 +1673,11 @@ footer ul li a {
     font-size: 14px;
   }
   #products {
-    padding: 0px 10px;
+    padding: 0px 0px;
   }
   .products {
     position: relative;
-    padding: 10px 15px;
+    padding: 10px 0px;
   }
   .main .about::before {
     content: " ";
@@ -1699,7 +1699,8 @@ footer ul li a {
     background-color: #f8e1d2;
   }
   .main #hero h2 {
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 600;
   }
   .mobile-nav {
     padding: 25px;
@@ -1715,6 +1716,13 @@ footer ul li a {
   }
   nav.btn-link {
     padding: 20px 0;
+  }
+  .main #hero {
+
+    background: url("../images/home--01.jpg");
+    background-size: cover;
+    background-position: center;
+
   }
 }
 

@@ -162,7 +162,7 @@ $(function () {
       0: {
         items: 1,
         nav: false,
-        stagePadding: 50,
+        stagePadding: 20,
         margin: 30
       },
       600: {
@@ -185,7 +185,7 @@ $(function () {
       0: {
         items: 1,
         nav: false,
-        stagePadding: 30,
+        stagePadding: 20,
         margin: 30
       },
       600: {
